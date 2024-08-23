@@ -37,7 +37,7 @@ def create_embedding(file: UploadFile):
 
         if torch.cuda.is_available():
             input_batch = input_batch.to("cuda")
-            model.to("cuda")
+            embedding_model.to("cuda")
 
         with torch.no_grad():
             output = embedding_model(input_batch).squeeze()
