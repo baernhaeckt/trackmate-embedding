@@ -8,7 +8,7 @@ from helpers.logger import logger
 
 def app_factory() -> FastAPI:
     # Init fast api
-    app: FastAPI = FastAPI(title="Emotion detection")
+    app: FastAPI = FastAPI(title="Embedding Service")
 
     # Add middleware
     app.add_middleware(
